@@ -2,12 +2,12 @@
 
 @font-face {
     font-family: 'Aurebesh';
-    src: url('../fonts/Aurebesh.eot');
-    src: url('../fonts/Aurebesh.eot') format('embedded-opentype'),
-    url('../fonts/Aurebesh.woff2') format('woff2'),
-    url('../fonts/Aurebesh.woff') format('woff'),
-    url('../fonts/Aurebesh.ttf') format('truetype'),
-    url('../fonts/Aurebesh.svg#Aurebesh') format('svg');
+    src: url('fonts/Aurebesh.eot');
+    src: url('/fonts/Aurebesh.eot') format('embedded-opentype'),
+    url('fonts/Aurebesh.woff2') format('woff2'),
+    url('fonts/Aurebesh.woff') format('woff'),
+    url('fonts/Aurebesh.ttf') format('truetype'),
+    url('fonts/Aurebesh.svg#Aurebesh') format('svg');
   }
 
 body {
@@ -70,7 +70,7 @@ body {
   }
   
   .popup-menu__overlay {
-    z-index: 8;
+    z-index: -1;
   }
   
   .popup-menu__overlay {
@@ -153,9 +153,18 @@ body {
   .nav-item__num:after {
     content: attr(data-after);
   }
-  
-  #starfield {
-    position: absolute;
-    width: 100%;
-  }
-  
+
+.toggle {
+ color: white;
+ cursor: pointer;
+ display: inline-block;
+ float: right;    
+     
+}
+
+nav {
+    padding-left: 20px;
+    padding-right: 20px;
+    position: relative;
+    
+}
